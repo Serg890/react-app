@@ -1,0 +1,294 @@
+.documentsBox {
+    margin-top: 60px;
+    font-family: " Open Sans";
+    font-style: normal;
+}
+
+.titleDoc {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.5px;
+    color: #272F3B;
+}
+
+.boxTable {
+    width: 100%;
+    min-height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-top: 35px;
+    display: flex;
+}
+
+.tableBlockLeft {
+    width: 78%;
+    min-height: 100px;
+    border-right: 0.7px solid #E8ECF0;
+}
+
+.table1 {
+    width: 100%;
+}
+
+.checkbox {
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin: 14.5px 15px 16px 30px;
+    width: 24px;
+    height: 24px;
+}
+
+.thead {
+    height: 43px;
+}
+
+th {
+    width: 100px;
+    height: 56px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #66728A;
+}
+
+.colDoc {
+    width: 190px;
+}
+
+.tbody {
+    border-top: 1px solid #dee2e6;
+    width: 76px;
+}
+
+
+.thCheck {
+    width: 30px;
+}
+
+td {
+    height: 76px;
+}
+
+.document {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #272F3B;
+}
+
+.lastEdited,
+.signed,
+.permission,
+.size {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 0.458333px;
+    color: #272F3B;
+}
+
+.signed {
+    padding-left: 16px;
+}
+
+.options {
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    margin-right: 20px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -4px;
+    left: 30px;
+    height: 24px;
+    width: 24px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DE;
+    border-radius: 6px;
+}
+
+.container input:checked~.checkmark {
+    background: #2896CC;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    background: url("../../assets/image/Path\ 14.png");
+    background-size: 24px 24px;
+}
+
+.tableBlockRigth {
+    width: 22%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.chooseFile {
+    width: 75%;
+    height: 140px;
+    background: #F3F4F5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 23px;
+}
+
+.inputFile {
+    width: 138px;
+    height: 140px;
+    z-index: 1;
+    position: absolute;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.spText {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.461538px;
+    color: #272F3B;
+}
+
+.btnCreate {
+    width: 75%;
+    margin: 20px 30px 0;
+}
+
+.deleteBoox{
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+.delete {
+    display: none;
+    height: 25px;
+    width: 140px;
+    border: none;
+    background-color: white;
+    outline: none !important;
+}
+
+.spDelete {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #2896CC;
+    margin-left: 10px;
+}
+
+.onDel {
+    display: block;
+}
+
+.offDel {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .boxTable {
+        flex-flow: column-reverse;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+    .tableBlockRigth {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        border-bottom: 1px solid #D1D5DE;
+
+    }
+
+    .tableBlockLeft {
+        width: 100%;
+        border-right: none;
+    }
+
+    .chooseFile {
+        width: 30%;
+        height: 60px;
+    }
+
+    .btnCreate {
+        width: 20%;
+
+    }
+
+    .deleteBoox {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .boxTable {
+        width: 98%;
+        margin-bottom: 50px;
+    }
+
+    .chooseFile {
+        width: 26%;
+    }
+    .tableBlockRigth{
+        width: 151%;
+    }
+    .tableBlockLeft{
+        width: 151%;
+    }
+
+}

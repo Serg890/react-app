@@ -1,0 +1,96 @@
+.toolBox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inpSearch {
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 60px;
+}
+
+.textSearch {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7E899F;
+}
+
+.search {
+    margin-right: 15px;
+}
+
+.navbar {
+    padding: 0 !important;
+    margin-top: px;
+}
+
+.nav-item {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #272F3B;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #272F3B;
+}
+.nav-item :hover{
+    color: #2896cc;
+}
+
+.about,
+.contact {
+    margin-right: 34px;
+}
+
+@media screen and (max-width:1290px) {
+    .toolBox {
+        flex-flow: column;
+        margin-top: 20px;
+    }
+
+    .inpSearch {
+        width: 300px;
+        height: 40px !important;
+        margin-bottom: 8px;
+    }
+
+    .inputBox {
+        flex-flow: wrap-reverse;
+        margin: 0;
+    }
+
+    .logoType {
+        margin-bottom: 18px;
+    }
+
+    .textSearch {
+        top: 8px;
+    }
+
+}

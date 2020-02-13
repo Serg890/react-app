@@ -1,0 +1,84 @@
+.modalka {
+    position: absolute;
+    top: -317px;
+    left: -695px;
+}
+
+.modalkaBack {
+    width: 100%;
+    height: 100vh;
+    opacity: .7;
+    background-color: #00070E;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.modalContent {
+    background-color: white;
+    width: 220px;
+    height: 118px;
+    border-radius: 15px;
+    z-index: 6;
+    position: absolute;
+    top: 366px;
+    left: 516px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+.modalDelete {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #272F3B;
+    border: none;
+    background-color: white;
+    width: 86px;
+    margin: 25px 0 0 24px;
+    outline: none !important;
+
+}
+
+.iconModal {
+    margin-right: 15px;
+}
+
+.modalEdit {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #272F3B;
+    border: none;
+    background-color: white;
+    width: 72px;
+    margin: 20px 0 0 24px;
+    outline: none !important;
+
+}
+
+
+.optionButton {
+    /* position: relative; */
+    border: none;
+    background-color: white;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* z-index: 4; */
+    outline: none !important;
+}
+
+.optionActive {
+    position: relative;
+    z-index: 4;
+}

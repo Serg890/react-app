@@ -1,0 +1,29 @@
+.titleCreate {
+    margin-top: 80px;
+}
+
+.titleInput {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #66728A;
+    margin-bottom: 177px;
+}
+
+.bodyCreate {
+    margin-top: 17px;
+}
+
+.butt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.modal-backdrop.show {
+    background-color: #00070E;
+}
